@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form
+      action="https://getform.io/f/fba8c622-15dd-4dfa-973b-4b1578dd8d5b"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name*:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name*"
+          required="required"
+        />
+        <label for="email">Email Address*:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email*"
+          required="required"
+        />
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" placeholder="91+ 0000000000" />
+        <div class="radio-group">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" />
+          <label for="other">Other</label>
+          <input type="radio" name="gender" value="other" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Related Information</legend>
+        <label for="positions">Applying for Position:</label>
+        <select name="positions">
+          <optgroup label="HR Department">
+            <option value="hrmanager">HR Manager</option>
+            <option value="hrspecialist" selected>HR Specialist</option>
+          </optgroup>
+          <optgroup label="Marketing Department">
+            <option value="smanager" selected>Social Media Manager</option>
+            <option value="mspecialist" selected>Marketing Specialist</option>
+          </optgroup>
+        </select>
+        <label for="letter">Cover Letter*:</label>
+        <textarea
+          name="coverletter"
+          rows="10"
+          cols="30"
+          placeholder="Tell us what motivated you to apply for this position in 250 words or less."
+          required="required"
+        ></textarea>
+        <div>
+          <label for="file">Upload Your CV: </label>
+          <input type="file" name="file" />
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
